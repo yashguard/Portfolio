@@ -1,6 +1,9 @@
 import React from "react";
 import Nav from "./Nav";
 import Home from "./Home";
+import AboutMe from "./AboutMe";
+import WhatIDo from "./WhatIDo";
+import Resume from "./Resume";
 
 const Main = () => {
   return (
@@ -11,6 +14,9 @@ const Main = () => {
         </div>
         <div className="sections">
           <Home/>
+          <AboutMe/>
+          <WhatIDo/>
+          <Resume/> 
         </div>
       </div>
     </div>
