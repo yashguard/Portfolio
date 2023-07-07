@@ -48,6 +48,19 @@ a {
   display: block;
 }
 
+.text-white {
+  color: var(--white);
+}
+
+.bg {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ============================ 
         main component
  ============================ */
@@ -119,7 +132,7 @@ nav ul a:hover {
  ============================ */
 
 .sections {
-  width: 100%;
+  width: 87%;
   position: absolute;
   z-index: 99;
   top: 0;
@@ -145,11 +158,82 @@ nav ul a:hover {
   height: 100vh;
 }
 
-.bg {
-  height: 100vh;
-  background-color: black;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.sections .home-section .overlay .titleOne {
+  animation-name: moveRight;
+  animation-duration: 0.7s;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.sections .home-section .overlay .titleTwo {
+  animation-name: moveLeft;
+  animation-duration: 1s;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.sections .home-section .overlay .titleThree {
+  animation-name: moveUp;
+  animation-duration: 1.3s;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.sections .home-section .overlay h1 {
+  font-size: 52px;
+  font-weight: 600;
+  color: var(--light-green);
+  margin: 10px 0;
+}
+
+.sections .home-section .overlay a {
+  padding: 13px 40px;
+  border: 1px solid var(--light-green);
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--light-green);
+  margin-top: 25px;
+  transition: all 0.5s;
+}
+
+.sections .home-section .overlay a:hover {
+  background-color: var(--light-green);
+  color: var(--white);
 }
