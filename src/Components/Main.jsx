@@ -4,6 +4,9 @@ import Home from "./Home";
 import AboutMe from "./AboutMe";
 import WhatIDo from "./WhatIDo";
 import Resume from "./Resume";
+import Portfolio from "./Portfolio";
+import Testimonial from "./Testimonial";
+import Contact from "./Contact";
 
 const Main = () => {
   return (
@@ -16,7 +19,10 @@ const Main = () => {
           <Home/>
           <AboutMe/>
           <WhatIDo/>
-          <Resume/> 
+          <Resume/>
+          <Portfolio/>
+          <Testimonial/>
+          <Contact/>
         </div>
       </div>
     </div>

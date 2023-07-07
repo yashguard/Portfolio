@@ -18,9 +18,9 @@ const Nav = () => {
               <Link to="#about" smooth><li>About Me</li></Link>
               <Link to="#whatido" smooth><li>What I Do</li></Link>
               <Link to="#resume" smooth><li>Resume</li></Link>
-              <Link to="#home" smooth><li>Portfolio</li></Link>
-              <Link to="#home" smooth><li>Testimonial</li></Link>
-              <Link to="#home" smooth><li>Contact</li></Link>
+              <Link to="#portfolio" smooth><li>Portfolio</li></Link>
+              <Link to="#testimonial" smooth><li>Testimonial</li></Link>
+              <Link to="#contact" smooth><li>Contact</li></Link>
             </ul>
           </nav>
         </div>

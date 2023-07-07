@@ -105,9 +105,9 @@ a {
 }
 
 nav ul a {
-  transition: all 0.1s;
+  transition: all 0.3s;
   width: fit-content;
-  margin: 20px auto;
+  margin: 0 auto 20px;
 }
 
 nav ul a:hover {
