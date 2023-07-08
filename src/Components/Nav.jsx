@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashLink as Link } from 'react-router-hash-link'
+import { Link } from "react-scroll";
 
 const Nav = () => {
   return (
@@ -13,14 +13,14 @@ const Nav = () => {
         </div>
         <div className="navbar">
           <nav>
-            <ul> 
-              <Link to="#home" smooth><li>Home</li></Link>
-              <Link to="#about" smooth><li>About Me</li></Link>
-              <Link to="#whatido" smooth><li>What I Do</li></Link>
-              <Link to="#resume" smooth><li>Resume</li></Link>
-              <Link to="#portfolio" smooth><li>Portfolio</li></Link>
-              <Link to="#testimonial" smooth><li>Testimonial</li></Link>
-              <Link to="#contact" smooth><li>Contact</li></Link>
+            <ul>
+              <Link style={{cursor : "pointer"}} activeClass="active" smooth spy to="home"><li>Home</li></Link>
+              <Link style={{cursor : "pointer"}} activeClass="active" smooth spy to="about"><li>About Me</li></Link>
+              <Link style={{cursor : "pointer"}} activeClass="active" smooth spy to="whatido"><li>What I Do</li></Link>
+              <Link style={{cursor : "pointer"}} activeClass="active" smooth spy to="resume"><li>Resume</li></Link>
+              <Link style={{cursor : "pointer"}} activeClass="active" smooth spy to="portfolio"><li>Portfolio</li></Link>
+              <Link style={{cursor : "pointer"}} activeClass="active" smooth spy to="testimonial"><li>Testimonial</li></Link>
+              <Link style={{cursor : "pointer"}} activeClass="active" smooth spy to="contact"><li>Contact</li></Link>
             </ul>
           </nav>
         </div>

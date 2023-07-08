@@ -7,10 +7,10 @@ const Home = () => {
   let [state] = useState({
     titleOne : "Hi",
     titleTwo : "Welcome",
-    titleThree : "based in Gujarat, Surat, Katargam"
+    titleThree : "based in Gujarat, Surat, Katargam."
   })
   return (
-    <div className='home-section' id='home'>
+    <section className='home-section' id='home'>
       <div className="overlay row justify-content-center align-items-center flex-column text-white">
         <h2 className='titleOne'>{state.titleOne}</h2>
         <h3 className='titleTwo'>{state.titleTwo}</h3>
@@ -27,9 +27,9 @@ const Home = () => {
           }}/>
         </h1>
         <span className='titleThree'>{state.titleThree}</span>
-        <Link to="#testimonial" smooth>Hire Me</Link>
+        <Link to="#contact" smooth>Hire Me</Link>
       </div>
-    </div>
+    </section>
   )
 }
 

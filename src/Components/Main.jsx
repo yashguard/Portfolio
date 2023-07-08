@@ -16,13 +16,13 @@ const Main = () => {
           <Nav />
         </div>
         <div className="sections">
-          <Home/>
-          <AboutMe/>
-          <WhatIDo/>
-          <Resume/>
-          <Portfolio/>
-          <Testimonial/>
-          <Contact/>
+          <Home />
+          <AboutMe />
+          <WhatIDo />
+          <Resume />
+          <Portfolio />
+          <Testimonial />
+          <Contact />
         </div>
       </div>
     </div>
