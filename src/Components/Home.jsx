@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { HashLink as Link } from 'react-router-hash-link'
+import { Link } from "react-scroll";
 import Typewriter from 'typewriter-effect'
 
 
@@ -27,7 +27,7 @@ const Home = () => {
           }}/>
         </h1>
         <span className='titleThree'>{state.titleThree}</span>
-        <Link to="#contact" smooth>Hire Me</Link>
+        <Link style={{cursor : "pointer"}} activeClass="active" smooth spy to="contact">Hire Me</Link>
       </div>
     </section>
   )
