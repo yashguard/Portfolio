@@ -14,10 +14,11 @@
   --white: #fff;
   --light-green: #20c997;
   --social-media-color: #aab1b8;
-  --facebook-color: #3b5998;
-  --twitter-color: #3b5998;
+  --facebook-linkedin-twitter-color: #1877F2;
   --github-color: #333;
-  --linked-color: #3b5998;
+  --bg-dark: #212529;
+  --bg-light-dark: #343a40;
+  --common-heading-h2: #6c757d;
 }
 
 .row {
@@ -67,6 +68,44 @@ a {
   justify-content: center;
 }
 
+section {
+  padding: 100px 0;
+}
+
+.padding-0 {
+  padding: 0;
+}
+
+.common-heading {
+  position: relative;
+  text-align: center;
+}
+
+.common-heading h2 {
+  color: var(--common-heading-h2);
+  opacity: .1;
+  font-size: 8.25rem;
+  font-weight: 600;
+}
+
+.common-heading p {
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+}
+
+.common-heading hr {
+  width: 80px;
+  margin: 0 auto;
+  height: 3px;
+  background-color: var(--light-green);
+}
+
 /* ============================ 
         main component
  ============================ */
@@ -80,7 +119,7 @@ a {
  ============================ */
 
 .nav {
-  width: 260px;
+  width: 266px;
   background-color: var(--nav-background-color);
   height: 100vh;
   position: fixed;
@@ -138,7 +177,7 @@ nav ul a:hover {
 }
 
 .social-links {
-  padding: 0 25px 15px;
+  padding: 0 30px 15px;
 }
 
 #facebook,
@@ -148,17 +187,24 @@ nav ul a:hover {
   color: var(--social-media-color);
   cursor: pointer;
   transition: all 0.3s;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #facebook:hover,
 #twitter:hover,
 #linkedIn:hover {
-  color: var(--facebook-color);
+  color: var(--facebook-linkedin-twitter-color);
 }
 
 #git:hover {
   color: var(--github-color);
+}
+
+#facebook:focus,
+#twitter:focus,
+#git:focus,
+#linkedIn:focus {
+  outline: none;
 }
 
 /* ============================ 
@@ -166,7 +212,7 @@ nav ul a:hover {
  ============================ */
 
 .sections {
-  width: 87%;
+  width: 86%;
   position: absolute;
   z-index: 99;
   top: 0;
@@ -270,3 +316,11 @@ nav ul a:hover {
   background-color: var(--light-green);
   color: var(--white);
 }
+
+/* ============================ 
+        about section
+ ============================ */
+
+ .about-section {
+  background-color: var(--bg-dark);
+ }
