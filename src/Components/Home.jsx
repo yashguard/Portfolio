@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import Typewriter from 'typewriter-effect'
 
 
+
 const Home = () => {
   let [state] = useState({
     titleOne : "Hi",

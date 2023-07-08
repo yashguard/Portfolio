@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  border: none;
 }
 
 :root {
@@ -12,6 +13,11 @@
   --nav-background-color-opacity-8: rgba(17, 20, 24, 0.8);
   --white: #fff;
   --light-green: #20c997;
+  --social-media-color: #aab1b8;
+  --facebook-color: #3b5998;
+  --twitter-color: #3b5998;
+  --github-color: #333;
+  --linked-color: #3b5998;
 }
 
 .row {
@@ -127,6 +133,34 @@ nav ul a:hover {
   color: var(--light-green);
 }
 
+.active {
+  color: var(--light-green);
+}
+
+.social-links {
+  padding: 0 25px 15px;
+}
+
+#facebook,
+#twitter,
+#git,
+#linkedIn {
+  color: var(--social-media-color);
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 20px;
+}
+
+#facebook:hover,
+#twitter:hover,
+#linkedIn:hover {
+  color: var(--facebook-color);
+}
+
+#git:hover {
+  color: var(--github-color);
+}
+
 /* ============================ 
         sections
  ============================ */
@@ -235,8 +269,4 @@ nav ul a:hover {
 .sections .home-section .overlay a:hover {
   background-color: var(--light-green);
   color: var(--white);
-}
-
-.active {
-  color: var(--light-green);
 }
