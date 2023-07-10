@@ -17,7 +17,7 @@ const Main = () => {
         </div>
         <div className="sections padding-0 col-xxl-10 col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12">
           <Home />
-          {/* <AboutMe /> */}
+          <AboutMe />
           <WhatIDo />
           <Resume />
           <Portfolio />
