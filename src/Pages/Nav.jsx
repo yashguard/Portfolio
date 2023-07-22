@@ -1,16 +1,25 @@
 import React from "react";
 import "react-tooltip/dist/react-tooltip.css";
-import Picture from "./Picture";
-import NavBar from "./NavBar";
-import ToolTip from "./ToolTip";
+import Picture from "../Components/Picture";
+import NavBar from "../Components/NavBar";
+import ToolTip from "../Components/ToolTip";
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Nav = () => {
   return (
     <div>
       <div className="nav-bg row flex-column justify-content-between">
         <div className="profile">
-          <Picture />
+          <Link
+            style={{ cursor: "pointer" }}
+            activeClass="active"
+            smooth
+            spy
+            to="home"
+          >
+            <Picture />
+          </Link>
         </div>
         <div className="navbar">
           <NavBar />

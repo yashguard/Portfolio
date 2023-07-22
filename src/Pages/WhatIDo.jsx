@@ -1,7 +1,7 @@
 import React from "react";
-import CommonHeading from "./CommonHeading";
+import CommonHeading from "../Components/CommonHeading";
 import { FaChartBar, FaCompactDisc, FaGamepad, FaPaintBrush, FaPallet, FaPuzzlePiece } from "react-icons/fa";
-import Services from "./Services";
+import Services from "../Components/Services";
 
 const WhatIDo = () => {
   let setValues = [

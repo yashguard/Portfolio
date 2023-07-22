@@ -591,3 +591,11 @@ nav ul a:hover {
 .service-section .my-services .service:hover .service-box {
   transform: rotate3d(1, 0, 0, 180deg);
 }
+
+/* ============================ 
+        service section
+ ============================ */
+
+ .resume-section {
+  background-color: var(--bg-dark);
+ }
