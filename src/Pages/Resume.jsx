@@ -2,6 +2,7 @@ import React from "react";
 import CommonHeading from "../Components/CommonHeading";
 import MyEducation from "../Components/MyEducation";
 import MyExperience from "../Components/MyExperience";
+import ProgressBar from "../Components/ProgressBar";
 
 const Resume = () => {
   let education = [
@@ -57,15 +58,30 @@ const Resume = () => {
         <div className="row justify-content-center">
           <div className="education col-xxl-5">
             <h2>My Education</h2>
-            {education.map((ele) => {
-              return <MyEducation {...ele} />;
+            {education.map((ele, i) => {
+              return <MyEducation key={i} {...ele} />;
             })}
           </div>
           <div className="experience col-xxl-5">
             <h2>My Experience</h2>
-            {experience.map((ele) => {
-              return <MyExperience {...ele} />;
+            {experience.map((ele, i) => {
+              return <MyExperience key={i} {...ele} />;
             })}
+          </div>
+        </div>
+        <div className="progress-bar-part">
+          <h3>My Skills</h3>
+          <div className="row justify-content-center">
+            <div className="col-xxl-6">
+              <ProgressBar heading="React JS" perc="90" />
+              <ProgressBar heading="React JS" perc="90" />
+              <ProgressBar heading="React JS" perc="90" />
+            </div>
+            <div className="col-xxl-6">
+              <ProgressBar heading="React JS" perc="90" />
+              <ProgressBar heading="React JS" perc="90" />
+              <ProgressBar heading="React JS" perc="90" />
+            </div>
           </div>
         </div>
       </div>
