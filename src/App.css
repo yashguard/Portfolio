@@ -596,6 +596,58 @@ nav ul a:hover {
         service section
  ============================ */
 
- .resume-section {
+.resume-section {
   background-color: var(--bg-dark);
- }
+}
+
+.resume-section .education,
+.resume-section .experience {
+  color: var(--white);
+}
+
+.resume-section .education h2,
+.resume-section .experience h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.resume-section .education-list,
+.resume-section .experience-list {
+  margin-top: 20px;
+  background-color: var(--nav-background-color);
+  padding: 15px;
+}
+
+.resume-section .education-list span,
+.resume-section .experience-list span {
+  background-color: var(--light-green);
+  font-size: .875rem;
+  font-weight: 400;
+  padding: 3px 10px;
+  letter-spacing: 1px;
+  border-radius: 15px;
+}
+
+.resume-section .education-list h5,
+.resume-section .experience-list h5 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 20px 0 8px;
+}
+
+.resume-section .education-list h6,
+.resume-section .experience-list h6 {
+  color: var(--light-green);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.resume-section .education-list p,
+.resume-section .experience-list p {
+  color: var(--white);
+  opacity: .5;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 15px;
+}
