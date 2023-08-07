@@ -23,8 +23,7 @@ const ProgressBar = (props) => {
           <span>
             {counterPos && (
               <CountUp start={0} end={perc} duration={1} delay={0} />
-            )}
-            %
+            )}%
           </span>
         </div>
       </div>
