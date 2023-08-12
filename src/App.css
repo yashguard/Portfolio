@@ -707,12 +707,12 @@ nav ul a:hover {
   background-color: var(--bg-light-dark);
 }
 
-.project-section .options .project-buttons {
+.project-section .project-buttons {
   width: 40%;
   margin: 0 auto;
 }
 
-.project-section .options .project-buttons button {
+.project-section .project-buttons button {
   background-color: transparent;
   color: var(--white);
   font-size: 1rem;
@@ -720,10 +720,10 @@ nav ul a:hover {
   font-weight: 500;
 }
 
-.project-section .options .project-buttons button.active {
+.project-section .project-buttons button.active {
   color: var(--light-green);
 }
 
-.project-section .options .project-buttons button:Hover {
+.project-section .project-buttons button:Hover {
   color: var(--light-green);
 }

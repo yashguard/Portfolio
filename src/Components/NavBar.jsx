@@ -56,15 +56,6 @@ const NavBar = () => {
             activeClass="active"
             smooth
             spy
-            to="testimonial"
-          >
-            <li>Testimonial</li>
-          </Link>
-          <Link
-            style={{ cursor: "pointer" }}
-            activeClass="active"
-            smooth
-            spy
             to="contact"
           >
             <li>Contact</li>
