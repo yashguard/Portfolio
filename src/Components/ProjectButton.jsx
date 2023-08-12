@@ -1,12 +1,12 @@
 import React from "react";
 
 const ProjectButton = (props) => {
-  let { option, activeLink, setActiveLink } = props;
+  let { option, activeLink, handleActiveLink } = props;
   return (
     <div>
       <button
         className={`${activeLink === option ? "active" : ""}`}
-        onClick={(e) => setActiveLink(e.target.innerHTML)}
+        onClick={(e) => handleActiveLink(e.target.innerHTML)}
       >
         {option}
       </button>

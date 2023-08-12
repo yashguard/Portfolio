@@ -707,9 +707,13 @@ nav ul a:hover {
   background-color: var(--bg-light-dark);
 }
 
+/* ============================ 
+        project options
+ ============================ */
+
 .project-section .project-buttons {
   width: 40%;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 
 .project-section .project-buttons button {
@@ -724,6 +728,28 @@ nav ul a:hover {
   color: var(--light-green);
 }
 
-.project-section .project-buttons button:Hover {
+.project-section .project-buttons button:hover {
   color: var(--light-green);
+}
+
+/* ============================ 
+        project demos
+ ============================ */
+ 
+.project-section .project-demo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project-section .project-demo .box {
+  height: 400px;
+  background-color: transparent;
+  margin: 12px;
+  border: 1px solid var(--bg-dark);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.project-section .project-demo .box:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
