@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   border: none;
+  transition: all 0.5s;
 }
 
 :root {
@@ -21,6 +22,10 @@
   --common-heading-h2: #6c757d;
   --progress: #111418;
 }
+
+/* ============================ 
+      reusable tools
+ ============================ */
 
 .col-xs-1,
 .col-xs-2,
@@ -598,7 +603,7 @@ nav ul a:hover {
 }
 
 /* ============================ 
-        service section
+        resume section
  ============================ */
 
 .resume-section {
@@ -691,4 +696,34 @@ nav ul a:hover {
 .resume-section .progress-bar-part .progress .progress-bar {
   height: 100%;
   background-color: var(--light-green);
+}
+
+
+/* ============================ 
+        project section
+ ============================ */
+
+.project-section {
+  background-color: var(--bg-light-dark);
+}
+
+.project-section .options .project-buttons {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.project-section .options .project-buttons button {
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.project-section .options .project-buttons button.active {
+  color: var(--light-green);
+}
+
+.project-section .options .project-buttons button:Hover {
+  color: var(--light-green);
 }
