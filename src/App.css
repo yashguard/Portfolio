@@ -735,21 +735,43 @@ nav ul a:hover {
 /* ============================ 
         project demos
  ============================ */
- 
+
 .project-section .project-demo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-content: center;
 }
 
 .project-section .project-demo .box {
-  height: 400px;
+  position: relative;
+  height: 300px;
   background-color: transparent;
-  margin: 12px;
   border: 1px solid var(--bg-dark);
   border-radius: 15px;
   cursor: pointer;
+  color: white;
+  overflow: hidden;
 }
 
-.project-section .project-demo .box:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+.project-section .project-demo .box .overlay-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+}
+
+.project-section .project-demo .box img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
+.project-section .project-demo .box:hover .overlay-box {
+  opacity: 1;
 }
