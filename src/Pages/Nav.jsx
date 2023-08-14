@@ -8,30 +8,28 @@ import { Link } from "react-scroll";
 
 const Nav = () => {
   return (
-    <div>
-      <div className="nav-bg row flex-column justify-content-between">
-        <div className="profile">
-          <Link
-            style={{ cursor: "pointer" }}
-            activeClass="active"
-            smooth
-            spy
-            to="home"
-          >
-            <Picture />
-          </Link>
-        </div>
-        <div className="navbar">
-          <NavBar />
-        </div>
-        <div className="social-links">
-          <ToolTip
-            facebook={<FaFacebook id="facebook" />}
-            linkedin={<FaLinkedin id="linkedIn" />}
-            github={<FaGithub id="git" />}
-            twitter={<FaTwitter id="twitter" />}
-          />
-        </div>
+    <div className="nav-bg row flex-column justify-content-between">
+      <div className="profile">
+        <Link
+          style={{ cursor: "pointer" }}
+          activeClass="active"
+          smooth
+          spy
+          to="home"
+        >
+          <Picture />
+        </Link>
+      </div>
+      <div className="navbar">
+        <NavBar />
+      </div>
+      <div className="social-links">
+        <ToolTip
+          facebook={<FaFacebook id="facebook" />}
+          linkedin={<FaLinkedin id="linkedIn" />}
+          github={<FaGithub id="git" />}
+          twitter={<FaTwitter id="twitter" />}
+        />
       </div>
     </div>
   );

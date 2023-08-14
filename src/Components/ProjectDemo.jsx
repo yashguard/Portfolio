@@ -1,22 +1,21 @@
-import React from "react";
 import { motion } from "framer-motion";
+import React from "react";
 
 const ProjectDemo = (props) => {
   let { bgColor, option } = props;
   return (
     <motion.div
-      layout
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.8 }}
+      className="box"
+      style={{ backgroundColor: bgColor }}
     >
-      <div className="box" style={{ backgroundColor: bgColor }}>
-        <div className="overlay-box row align-items-center justify-content-center">
-          <h2>Title</h2>
-          <span>JQUERY, HTML, CSS, MEDIAQUERY</span>
-        </div>
-        {/* <img src="/image/lawsight.png" alt="" /> */}
+      <div className="overlay-box row align-items-center justify-content-center">
+        <h2>Title</h2>
+        <span>JQUERY, HTML, CSS, MEDIAQUERY</span>
       </div>
+      <h1>{option}</h1>
     </motion.div>
   );
 };

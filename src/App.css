@@ -251,7 +251,7 @@ section {
         navigation 
  ============================ */
 
-.nav {
+header {
   background-color: var(--nav-background-color);
   position: fixed;
   z-index: 100;
@@ -739,8 +739,8 @@ nav ul a:hover {
 .project-section .project-demo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  justify-content: center;
+  grid-column-gap: 1rem;
+  grid-row-gap: 2rem;
 }
 
 .project-section .project-demo .box {
@@ -775,3 +775,24 @@ nav ul a:hover {
 .project-section .project-demo .box:hover .overlay-box {
   opacity: 1;
 }
+
+
+/* ============================ 
+        contact section 
+ ============================ */
+
+.contact-section {
+  background-color: var(--bg-dark);
+}
+
+/* ============================ 
+        footer 
+ ============================ */
+
+ footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--bg-light-dark);
+  padding: 15px 0;
+ }

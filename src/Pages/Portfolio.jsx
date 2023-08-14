@@ -4,10 +4,11 @@ import ProjectButton from "../Components/ProjectButton";
 import ProjectDemo from "../Components/ProjectDemo";
 import { useDispatch, useSelector } from "react-redux";
 import { addProjects } from "../Redux/Action";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 const Portfolio = () => {
   let [activeLink, setActiveLink] = useState("ALL");
+  let options = ["ALL", "CSS", "SASS", "BOOTSTRAP", "REACT JS"];
   let projectDetails = [
     {
       id: 1,
@@ -108,10 +109,6 @@ const Portfolio = () => {
   ];
   let dispatch = useDispatch();
   let projects = useSelector((store) => store.projects);
-  const handleActiveLink = async (value) => {
-    await setActiveLink(value);
-    await handleProjects(value);
-  };
 
   const handleProjects = (value) => {
     let duplicate = projectDetails.filter((ele) => ele.option === value);
@@ -122,6 +119,11 @@ const Portfolio = () => {
     }
   };
 
+  const handleActiveLink = async (value) => {
+    await setActiveLink(value);
+    await handleProjects(value);
+  };
+
   useEffect(() => {
     dispatch(addProjects(projectDetails));
   }, []);
@@ -130,43 +132,23 @@ const Portfolio = () => {
     <section className="project-section" id="portfolio">
       <div className="container">
         <CommonHeading heading="PORTFOLIO" subHeading="My Work" />
-        <div className="project-box">
-          <div className="project-buttons row justify-content-between">
-            <ProjectButton
-              option="ALL"
-              handleActiveLink={handleActiveLink}
-              activeLink={activeLink}
-            />
-            <ProjectButton
-              option="CSS"
-              handleActiveLink={handleActiveLink}
-              activeLink={activeLink}
-            />
-            <ProjectButton
-              option="SASS"
-              handleActiveLink={handleActiveLink}
-              activeLink={activeLink}
-            />
-            <ProjectButton
-              option="BOOTSTRAP"
-              handleActiveLink={handleActiveLink}
-              activeLink={activeLink}
-            />
-            <ProjectButton
-              option="REACT JS"
-              handleActiveLink={handleActiveLink}
-              activeLink={activeLink}
-            />
-          </div>
-          <motion.div className="project-demo">
-            {projects.map((ele, i) => {
-              return (
-                <AnimatePresence>
-                  <ProjectDemo key={ele.id} {...ele} />;
-                </AnimatePresence>
-              );
+        <div className="project-buttons row justify-content-between">
+          {options.map((ele) => {
+            return (
+              <ProjectButton
+                option={ele}
+                handleActiveLink={handleActiveLink}
+                activeLink={activeLink}
+              />
+            );
+          })}
+        </div>
+        <div className="project-demo">
+          <AnimatePresence>
+            {projects.map((ele) => {
+              return <ProjectDemo key={ele.id} {...ele} />
             })}
-          </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </section>

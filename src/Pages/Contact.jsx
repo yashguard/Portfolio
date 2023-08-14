@@ -1,9 +1,12 @@
 import React from 'react'
+import CommonHeading from "../Components/CommonHeading";
 
 const Contact = () => {
   return (
-    <section className='bg' id='contact'>
-        <h1>Contact</h1>
+    <section className='contact-section' id='contact'>
+      <div className="container">
+        <CommonHeading heading="CONTACT" subHeading="Get in Touch" />
+      </div>
     </section>
   )
 }
