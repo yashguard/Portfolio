@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   border: none;
-  transition: all 0.5s;
 }
 
 :root {
@@ -783,6 +782,21 @@ nav ul a:hover {
 
 .contact-section {
   background-color: var(--bg-dark);
+}
+
+.contact-section .details,
+.contact-section .contact-form {
+  color: var(--white);
+}
+
+.contact-section .phoneNumber span {
+  display: block;
+}
+
+.contact-section .address h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
 /* ============================ 
